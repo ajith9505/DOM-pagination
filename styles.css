@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eddbe4;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: #eee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.table {
+    width: 90%;
+    height: 70vh;
+    border-collapse: collapse;
+    text-align: left;
+    overflow: hidden;
+    margin: 0 auto;
+    outline: none;
+    border-radius: 15px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: PaleTurquoise;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+th {
+    background-color: #4ca;
+    font-size: 20px;
+    border-top: 1px solid #ECF0F1;
+    padding: 10px;
+
+}
+
+td {
+    border-top: 1px solid #ECF0F1;
+    padding: 10px;
+    border-left: 1px solid #ECF0F1;
+    border-right: 1px solid #ECF0F1;
+}
+
+tr:hover {
+    background-color: #f3f3f3;
+}
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    height: 10vh;
+}
+
+#buttons a,
+#buttons button {
+    padding: 10px;
+    background: rgba(221, 149, 149, 0.867);
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+    margin: 3px;
+}
+
+#buttons a:hover {
+    background-color: #4ea;
+}
+
+#buttons button:hover {
+    background-color: rgb(68, 181, 238);
+}
+
+#buttons button {
+    background-color: rgb(135, 209, 251);
+}
+
+#buttons a.active {
+    background-color: #4ea;
+    box-shadow: inset 0, 0, 4px rgba(0, 0, 0, 0.2);
+}
+
+
+#description-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#description {
+    width: 90%;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: auto;
+    background-color: #c6e0e9;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+@media(max-width: 800px) {
+
+    #buttons a,
+    #buttons button {
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    #buttons a:hover {
+        background-color: #4ea;
+    }
+
+    #buttons button:hover {
+        background-color: rgb(68, 181, 238);
+    }
+}
+
+@media(max-width: 400px) {
+
+    #buttons a,
+    #buttons button {
+        padding: 3px;
+        border-radius: 5px;
+    }
+
+    #buttons a:hover {
+        background-color: #4ea;
+    }
+
+    #buttons button:hover {
+        background-color: rgb(68, 181, 238);
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagination</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Pagination</h1>
+  </header>
+  <div class="table-responsive">
+    <table class="table" id="table">
+      <thead id="table-head">
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody id="myTable"></tbody>
+    </table>
+  </div>
+  <div id="container">
+    <div id="buttons" class="d-flex justify-content-center">
+      <button class="button" id="startBtn" disabled>
+        First
+      </button>
+      <button class="button prevNext" id="prev" disabled>
+        Prev
+      </button>
+
+      <div class="links">
+        <a href="#" class="link active">1</a>
+        <a href="#" class="link">2</a>
+        <a href="#" class="link">3</a>
+        <a href="#" class="link">4</a>
+        <a href="#" class="link">5</a>
+        <a href="#" class="link">6</a>
+        <a href="#" class="link">7</a>
+        <a href="#" class="link">8</a>
+        <a href="#" class="link">9</a>
+        <a href="#" class="link">10</a>
+      </div>
+
+      <button class="button prevNext" id="next">
+        Next
+      </button>
+      <button class="button" id="endBtn">
+        Last
+      </button>
+    </div>
+  </div>
+
+  <div id="description-content">
+    <p id="description">
+      100 users name and email shown in above table. Each page contain 10 user details, total number of pages is 10. You
+      can switch in between pages, next page, previous page, first page and last page.
+    </p>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+
+</html>
